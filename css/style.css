@@ -1,0 +1,82 @@
+@font-face {
+    font-family: gandom;
+    src: url(../fonts/Gandom.ttf);
+  }
+body, *{
+    font-family: 'gandom';
+    direction: rtl
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/background.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.slider{
+    background-color: #fff;
+    height: 50%;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px
+}
+
+.slider-item{
+    height: 100%;
+    
+}
+.slider-img{
+    height: 100%;
+    width: 100%;
+}
+.slide-title{
+    font-weight: bold;
+    font-size: 3vw
+}
+.slide-session{
+    font-weight: bold;
+    font-size: 1.5vw
+}
+.slide-icon{
+    height: 3vw;
+    width:3vw;
+    float: left;
+    
+}
+.slide-intro{
+    height: 22%;
+    font-size: 1vw;
+    overflow: hidden
+}
+.slide-info{
+    font-size: 0.8vw;
+    color:rgb(150, 150, 150)
+}
+@media (max-width: 600px) {
+    .slider {
+      width: 100%;
+      border-radius: 0
+    }
+  }
+  @media screen and (max-width: 1200px) and (min-width:600px) {
+    .slider {
+      width: 600px
+    }
+  }
+
+
+  /*search box  */
+  .search-button{
+      color: #6ecff4;
+      border:1px solid #6ecff4;
+      border-radius: 4px;
+      height: 32px
+  }
+  .seach-box-border{
+      border: 1px solid rgb(200, 200, 200);
+      box-shadow: 5px 0px 50px -8px rgba(0,0,0,0.75);
+  }
