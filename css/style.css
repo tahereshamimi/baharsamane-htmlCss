@@ -7,6 +7,7 @@ body, *{
     direction: rtl
 }
 
+
 .header{
     height: 100vh;
     width: 100%;
@@ -35,11 +36,11 @@ body, *{
 }
 .slide-title{
     font-weight: bold;
-    font-size: 3vw
+    font-size: 50px
 }
 .slide-session{
     font-weight: bold;
-    font-size: 1.5vw
+    font-size: 25px
 }
 .slide-icon{
     height: 3vw;
@@ -48,25 +49,52 @@ body, *{
     
 }
 .slide-intro{
-    height: 22%;
-    font-size: 1vw;
+    height: 30%;
+    font-size: 15px;
     overflow: hidden
 }
 .slide-info{
-    font-size: 0.8vw;
-    color:rgb(150, 150, 150)
+    font-size: 15px;
+    color:rgb(150, 150, 150);
+    bottom: 0
 }
+
+/* between 600-1200px */
+@media screen and (max-width: 1200px) and (min-width:600px) {
+    .slider {
+      width: 600px
+    }
+    .slide-title{
+        font-size: 35px
+    }
+    .slide-session{
+        font-size: 20px
+    }
+    
+  }
+
+/* smaller than 600px */
 @media (max-width: 600px) {
     .slider {
       width: 100%;
       border-radius: 0
     }
-  }
-  @media screen and (max-width: 1200px) and (min-width:600px) {
-    .slider {
-      width: 600px
+    .slide-title{
+        font-size: 20px
     }
+    .slide-session{
+        font-size: 12px
+    }
+    .slide-intro{
+        font-size: 12px
+    }
+    .slide-info{
+        font-size: 12px
+    }
+
   }
+  
+  
 
 
   /*search box  */
@@ -80,3 +108,28 @@ body, *{
       border: 1px solid rgb(200, 200, 200);
       box-shadow: 5px 0px 50px -8px rgba(0,0,0,0.75);
   }
+
+
+
+
+  /* movies */
+  .cinema-group{
+      color: rgb(150, 150, 150);
+  }
+  .movie-box{
+    box-shadow: 0px 8px 33px 0px rgba(0,0,0,0.63);
+  }
+  .movie-caption{
+      font-size: 12px;
+      color:rgb(150, 150, 150)
+  }
+
+  @media (min-width:1200px){
+      .container{
+          max-width: 1500px !important;
+      }
+  }
+
+
+
+  
