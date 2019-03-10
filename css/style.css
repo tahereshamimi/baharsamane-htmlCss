@@ -11,10 +11,19 @@ body, *{
 .header{
     height: 100vh;
     width: 100%;
-    background-image: url(../images/background.jpg);
+    background: linear-gradient(rgba(255,255,255,0) 70%,rgba(255,255,255,1)), url('../images/background.jpg');
     background-repeat: none;
     background-size: cover;
 }
+/* .header::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+    margin-top: -150px;
+    height: 150px;
+    width: 100%;
+    content: '';
+  } */
 
 .slider{
     background-color: #fff;
