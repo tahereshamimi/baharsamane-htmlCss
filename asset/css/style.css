@@ -149,5 +149,73 @@ body, *{
   }
 
 
+/* event */
+.event-title{
+    height: 250px;
+}
 
-  
+.event-movie1{
+    background: url('../images/movies/copy.jpg');
+    background-size: cover;
+    height: 250px;
+}
+.event-movie2{
+    background: url('../images/movies/closeup.jpg');
+    background-size: cover;
+    height: 250px;
+}
+.event-movie3{
+    background: url('../images/movies/shirin.jpg');
+    background-size: cover;
+    height: 250px;
+}
+.event-movie4{
+    background: url('../images/movies/tamegilas.jpg');
+    background-size: cover;
+    height: 250px;
+}
+
+
+.event-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../images/kiarostami.jpg") center right no-repeat;
+    background-size: contain;
+  }
+  .event-background:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(175,157,137,1) 70%, rgba(175,157,137,0) 100%);
+  }
+  @media (min-width:1600px){
+      .event-background:before {
+        background: linear-gradient(90deg, rgba(175,157,137,1) 75%, rgba(175,157,137,0) 100%);
+      }
+  }
+  @media (max-width:1200px){
+    .event-background:before {
+      background: linear-gradient(90deg, rgba(175,157,137,1) 60%, rgba(175,157,137,0) 100%);
+    }
+}
+@media (max-width:768px){
+    .event-background{
+        background-position: top;
+    }
+    .event-background:before {
+      background: linear-gradient(0deg, rgba(175,157,137,1) 70%, rgba(175,157,137,0) 100%);
+    }
+    .event-movies{
+        padding-top: 100px
+    }
+    .event-movie{
+        margin: 20px
+    }
+    .event-movie-box{
+        padding:30px
+    }
+}
