@@ -21,6 +21,7 @@ body, *{
 .slider{
     background-color: #fff;
     height: 50%;
+    min-height: 400px;
     width: 50%;
     top: 50%;
     left: 50%;
@@ -45,9 +46,7 @@ body, *{
     font-size: 25px
 }
 .slide-icon{
-    height: 3vw;
-    width:3vw;
-    float: left;
+    font-size: 2.5vw;
     
 }
 .slide-intro{
@@ -61,7 +60,7 @@ body, *{
     bottom: 0
 }
 
-/* .owl-prev,
+.owl-prev,
 .owl-next {
   position: absolute;
   top: 50%;
@@ -74,7 +73,7 @@ body, *{
 
 .owl-next {
   right: -2rem;
-} */
+}
 
 
 
