@@ -1,9 +1,10 @@
 $(document).ready(function () {
-  let imgWidth=$('.movie-img').width();
-  console.log(imgWidth)
   let imgHeight=imgWidth*1.5;
+  console.log(imgHeight);
+  $(window).on('resize',function(){
+    $('.movie-img').css('height',$('.movie-img').width()*1.5);
+  })
   
-  $('.movie-img').css('height',imgHeight);
 
   $("#movieFilter").on("keyup", function () {
     var value = $(this).val().toLowerCase();
