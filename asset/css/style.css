@@ -49,15 +49,20 @@ body, *{
     font-size: 2.5vw;
     
 }
+
+
 .slide-intro{
-    height: 30%;
+    height: 40%;
     font-size: 15px;
-    overflow: hidden
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .slide-info{
     font-size: 15px;
     color:rgb(150, 150, 150);
-    bottom: 0
+    bottom: 0px;
 }
 
 .owl-prev,
@@ -73,6 +78,13 @@ body, *{
 
 .owl-next {
   right: -2rem;
+}
+.owl-carousel, .owl-stage-outer , .owl-stage , .owl-item{
+    height: 100% !important;
+}
+.owl-carousel::after{
+    content: '';
+    height: 100%;
 }
 
 
@@ -119,12 +131,17 @@ body, *{
   .search-button{
       color: #6ecff4;
       border:1px solid #6ecff4;
+      background-color: #fff;
       border-radius: 4px;
       height: 32px
   }
+  .search-input{
+      border-radius: 4px;
+      border:1px solid #98989a
+  }
   .seach-box-border{
       border: 1px solid rgb(200, 200, 200);
-      box-shadow: 5px 0px 50px -8px rgba(0,0,0,0.75);
+      box-shadow: 5px 0px 50px -8px rgba(99, 84, 84, 0.75);
   }
 
 
@@ -151,7 +168,11 @@ body, *{
 
 /* event */
 .event-title{
-    height: 250px;
+    height: 200px;
+    margin-top: 130px
+}
+.text-shadow{
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 
 .event-movie1{
@@ -178,7 +199,6 @@ body, *{
 
 .event-background {
     position: relative;
-    width: 100%;
     height: 100%;
     background: url("../images/kiarostami.jpg") center right no-repeat;
     background-size: contain;
@@ -218,4 +238,31 @@ body, *{
     .event-movie-box{
         padding:30px
     }
+}
+
+
+/* footer */
+.news-box{
+    box-shadow: 2px 7px 70px 8px rgba(0,0,0,0.4);
+}
+.news-input{
+    width:60%;
+    border:none;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+.news-button{
+    color: #f4943f;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #f4943f;
+}
+.copy-right{
+    font-size: 10px;
+    color: #98989a;
+    text-align: center
+}
+.power-by{
+    font-size: 13px;
+    color: #98989a;
+    text-align: center
 }
