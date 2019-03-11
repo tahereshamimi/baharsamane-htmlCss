@@ -15,6 +15,7 @@
     background: linear-gradient(rgba(255, 255, 255, 0) 70%,rgba(255, 255, 255, 1)),url("../images/background.jpg");
     background-repeat: none;
     background-size: cover;
+    background-position: center;
   }
   
   .slider {
@@ -235,18 +236,21 @@
 
   @media (min-width: 1600px) {
     .event-background:before {
-      background: linear-gradient(90deg,rgba(175, 157, 137, 1) 75%,rgba(175, 157, 137, 0) 100%);
+      background: linear-gradient(90deg,rgba(175, 157, 137, 1) 70%,rgba(175, 157, 137, 0) 100%);
     }
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1200px) and (min-width: 768px)  {
     .event-background:before {
-      background: linear-gradient(
-        90deg,
-        rgba(175, 157, 137, 1) 60%,
-        rgba(175, 157, 137, 0) 100%
-      );
+      /* background: linear-gradient(90deg,rgba(175, 157, 137, 1) 60%,rgba(175, 157, 137, 0) 100%); */
+      background: linear-gradient(0deg,rgba(175, 157, 137, 1) 40%,rgba(175, 157, 137, 0) 100%);
+      
     }
+    .event-title {
+      height: 300px;
+
+    }
+    
   }
 
   @media (max-width: 768px) {
@@ -255,11 +259,8 @@
     }
 
     .event-background:before {
-      background: linear-gradient(
-        0deg,
-        rgba(175, 157, 137, 1) 70%,
-        rgba(175, 157, 137, 0) 100%
-      );
+      background: linear-gradient(0deg,rgba(175, 157, 137, 1) 70%,rgba(175, 157, 137, 0) 100%);
+      
     }
 
     .event-movies {
